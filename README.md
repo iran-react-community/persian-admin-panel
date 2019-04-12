@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# persian-admin-panel
+<h3 align="center" >
+پنل مدیریت فارسی با ری اکت
+</h3>
 
-## Available Scripts
+<div align="right" dir="rtl">
 
-In the project directory, you can run:
+  پروژه پنل مدیریت یک پروژه به کمک اعضای انجمن ری اکت ایران است که هدف آن بالابردن تجربه و افزایش بار علمی انجمن است . 
 
-### `npm start`
+  <br/>
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  #### لیست پکیج های فنی پروژه
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+  هر پروژه برای شروع نیاز به یک هماهنگی و نیاز های فنی دارد که در راستای انجام پروژه ، بتواند تیم را در مسیر صحیحی قرار دهد . 
 
-### `npm test`
+  <br/>
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  در صورتی که برای هر کدام از پکیج ها جایگزینی مد نظر دارید یا نیاز بهتری را احساس میکنید ، لطفا در issue ‌ها بنویسید . 
 
-### `npm run build`
+  <br/>
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  شروع پروژه با استفاده از cra یا همان create-react-app  است . 
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+  |نام | کاربرد |
+  |-------|-----|
+  | [ react router dom 4 ](https://www.npmjs.com/package/react-router-dom)| ایجاد روتر و لینک کردن |
+  | [ material-ui ](https://material-ui.com/getting-started/installation/) | یک ui kit  برای متریال |
+  | [ axios ](https://www.npmjs.com/package/axios) | ارسال درخواست ها به API |
+  | [ redux ](https://redux.js.org/introduction/installation) | مدیریت state  ها |
+  | [ react helmet ](https://www.npmjs.com/package/react-helmet) | مدیریت Meta  ها در هدر |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   #### نیاز های برطرف نشده پروژه
 
-### `npm run eject`
+   - طرح ui 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   #### مدیریت پروژه در Trello
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   برای رعایت نظم اجرای پروژه ، لطفا in progress  های هر Board  که علاقه به انجام آن را دارید را تکمیل کنید.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   <br/>
+    بورد ها بعد از اتمام ، به روز شده و todo جدید جایگزین میشوند .
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+   #### نحوه همکاری 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   - به منظور همکاری در پروژه ابتدا ریپوزیتوری را fork  کنید و بر اساس Trello ، task  های مانده را انجام بدید 
+   - پس از تکمیل کار انجام شده ، لطفا pull request  بدید
+   - در صورت یافتن باگ  , به صورت یک issue  آن را مطرح و پس از pull request  دادن ، شماره pull request  را در ایشو اعلام میکنیم . 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+</div>
