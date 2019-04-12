@@ -49,6 +49,14 @@
    - در صورت یافتن باگ  , به صورت یک issue  آن را مطرح و پس از pull request  دادن ، شماره pull request  را در ایشو اعلام میکنیم . 
 
 
+##### API
+api routes are in progress and will be completed as soon as we can . 
 
+###### admin routes
+| name  | router address | params | description |
+| ------------- | ------------- | ------------- | ------------- |
+| login admin | Post `localhost:8080/api/v1/admin/login` |  email,password | you can register admin in `localhost:8080/admin/login` route for first setup. |
+| get products | Get `localhost:8080/api/v1/admin/products` |  authorization : Bearer < TOKEN HERE > | it will show last 10 new created products |
+| insert into products | Post  `localhost:8080/api/v1/admin/products/insert` | permalink,title,price,description,published,tags(tag1,tag2,tag3),optJson ({"رنگ":{"optName":"رنگ","optLabel":"رنگ","optType":"radio","optOptions":["قرمز","آبی"]}}),stock | insert new product into database |
 
 </div>
