@@ -37,7 +37,7 @@
 
    برای رعایت نظم اجرای پروژه ، لطفا in progress  های هر Board  که علاقه به انجام آن را دارید را تکمیل کنید.
 
-   [ لینک ترلو پروژه ](https://trello.com/reactpanelproject/members)
+   [ لینک ترلو پروژه ](https://trello.com/reactpanelproject)
    <br/>
     بورد ها بعد از اتمام ، به روز شده و todo جدید جایگزین میشوند .
 
