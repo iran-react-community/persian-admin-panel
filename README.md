@@ -23,8 +23,31 @@
   
   |نام | کاربرد |
   |-------|-----|
-  | react router dom 4 | ایجاد روتر و لینک کردن |
-  | material-ui | یک ui kit  برای متریال |
-  | axios | ارسال درخواست ها به API |
+  | [ react router dom 4 ](https://www.npmjs.com/package/react-router-dom)| ایجاد روتر و لینک کردن |
+  | [ material-ui ](https://material-ui.com/getting-started/installation/) | یک ui kit  برای متریال |
+  | [ axios ](https://www.npmjs.com/package/axios) | ارسال درخواست ها به API |
+  | [ redux ](https://redux.js.org/introduction/installation) | مدیریت state  ها |
+  | [ react helmet ](https://www.npmjs.com/package/react-helmet) | مدیریت Meta  ها در هدر |
+ 
+   #### نیاز های برطرف نشده پروژه
+   
+   - طرح ui 
+   
+   #### مدیریت پروژه در Trello
+   
+   برای رعایت نظم اجرای پروژه ، لطفا in progress  های هر Board  که علاقه به انجام آن را دارید را تکمیل کنید.
+   
+   <br/>
+    بورد ها بعد از اتمام ، به روز شده و todo جدید جایگزین میشوند .
+    
+    
+   #### نحوه همکاری 
+   
+   - به منظور همکاری در پروژه ابتدا ریپوزیتوری را fork  کنید و بر اساس Trello ، task  های مانده را انجام بدید 
+   - پس از تکمیل کار انجام شده ، لطفا pull request  بدید
+   - در صورت یافتن باگ  , به صورت یک issue  آن را مطرح و پس از pull request  دادن ، شماره pull request  را در ایشو اعلام میکنیم . 
+   
+   
+
   
 </div>
