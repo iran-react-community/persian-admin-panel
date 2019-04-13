@@ -1,26 +1,39 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Route, BrowserRouter as Router, Redirect } from "react-router-dom";
+
+import Dashboard from './Component/Dashboard'
 
 class App extends Component {
   render() {
+    //For Checking is user authenticated?
+    const Auth = {
+      isAuthenticated: false,
+      authenticate() {
+        this.isAuthenticated = true;
+      }
+    };
+    // It checks if the user is authenticated, if they are,
+    // it renders the "component" prop. If not, it redirects
+    // the user to /login.
+    const PrivateRoute = () => (
+      <Route
+        render={props =>
+          Auth.isAuthenticated === true ? (
+            <Dashboard />
+          ) : (
+            <Redirect to="/login" />
+          )
+        }
+      />
+    );
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <>
+        <Router>
+          <Route path="/login" exact /> 
+          <Route path="/dashboard" exact />
+        </Router>
+      </>
     );
   }
 }
