@@ -31,7 +31,7 @@ class App extends Component {
       <>
         <Router>
           <Route path="/login" exact /> 
-          <Route path="/dashboard" exact />
+          <PrivateRoute path="/dashboard" exact />
         </Router>
       </>
     );
