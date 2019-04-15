@@ -1,19 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 
 import Dashboard from "./Component/Dashboard/index";
 import PrivateRoute from './Component/PrivateRoutes'
 
-class App extends Component {
+function App() {
 
-  render() {
-    return (
-      <Router>
-        <Route exact path="/login" />
-        <PrivateRoute exact path='/dashboard' component={Dashboard} />
-      </Router>
-    )
-  }
+
+  return (
+    <Router>
+      <Route exact path="/login" />
+      <PrivateRoute exact path='/dashboard' component={Dashboard} />
+    </Router>
+  )
+
 }
 
 
