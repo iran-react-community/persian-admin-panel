@@ -1,41 +1,20 @@
 import React, { Component } from "react";
-import { Route, BrowserRouter as Router, Redirect } from "react-router-dom";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 
-import Dashboard from './Component/Dashboard'
+import Dashboard from "./Component/Dashboard/index";
+import PrivateRoute from './Component/PrivateRoutes'
 
 class App extends Component {
-  render() {
-    //For Checking is user authenticated?
-    const Auth = {
-      isAuthenticated: false,
-      authenticate() {
-        this.isAuthenticated = true;
-      }
-    };
-    // It checks if the user is authenticated, if they are,
-    // it renders the "component" prop. If not, it redirects
-    // the user to /login.
-    const PrivateRoute = () => (
-      <Route
-        render={props =>
-          Auth.isAuthenticated === true ? (
-            <Dashboard />
-          ) : (
-            <Redirect to="/login" />
-          )
-        }
-      />
-    );
 
+  render() {
     return (
-      <>
-        <Router>
-          <Route path="/login" exact /> 
-          <PrivateRoute path="/dashboard" exact />
-        </Router>
-      </>
-    );
+      <Router>
+        <Route exact path="/login" />
+        <PrivateRoute exact path='/dashboard' component={Dashboard} />
+      </Router>
+    )
   }
 }
+
 
 export default App;
