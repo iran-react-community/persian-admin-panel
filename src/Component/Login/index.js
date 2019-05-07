@@ -46,6 +46,13 @@ const styles = theme => ({
     submit: {
         marginTop: theme.spacing.unit * 3,
     },
+    loginAlert:{
+        padding:10,
+        backgroundColor:'#e10026',
+        color:'#ffffff',
+        textAlign:'center',
+        marginTop:10
+    }
 });
 
 function Login(props) {
@@ -54,6 +61,7 @@ function Login(props) {
     const [password, setPassword] = useState(null);
     const [auth, setAuth] = useState(false);
     const [token, setToken] = useState(null);
+    const [showError, setShowError] = useState("");
 
     function handleEmail(e) {
         setEMail(e.target.value);
@@ -82,10 +90,13 @@ function Login(props) {
                 setAuth(true);
                 setToken(res.data.result.token);
                 localStorage.setItem(token, { token });
+                redirect();
             }
-            redirect();
+            else{
+                setShowError(config.messages.Login_Alert)
+            }
         }).catch((err) => {
-            console.log(err)
+            setShowError(config.messages.Login_Alert)
         })
 
     }
@@ -129,6 +140,12 @@ function Login(props) {
                     >
                         Sign in
           </Button>
+
+                    {showError !== "" &&
+                        <Typography variant={'body1'} className={classes.loginAlert}>
+                            {showError}
+                        </Typography>
+                    }
                 </form>
             </Paper>
         </main>
