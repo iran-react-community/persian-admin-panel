@@ -13,6 +13,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import withStyles from '@material-ui/core/styles/withStyles';
+import * as config from '../Utilities/config'
 
 
 const styles = theme => ({
@@ -68,7 +69,7 @@ function Login(props) {
         e.preventDefault()
         axios({
             method: 'POST',
-            url: "http://shop.nimahabibkhoda.ir/api/v1/admin/login",
+            url: config.Login_API,
             headers: {
                 'Content-Type': 'application/json',
             },
