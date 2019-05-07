@@ -1,0 +1,1 @@
+export const Login_API = "shop.nimahabibkhoda.ir/api/v1/admin/login"
